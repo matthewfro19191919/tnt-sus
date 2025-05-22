@@ -304,7 +304,54 @@ class Character extends FlxNestedSkewSprite
 				addOffset("singLEFT", 124, -13);
 				addOffset("singDOWN", -46, -144);
 
-				playAnim('danceRight');
+				playAnim('danceRight');		
+			case 'LIMEGREENWEEKINVSIMPOSTOR':
+				frames = Paths.getSparrowAtlasFunk("characters/LIME_GRTEEN");
+				animation.addByPrefix('singUP', 'Sing Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
+				animation.addByPrefix('singLEFT', 'SIng Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
+				animation.addByPrefix('idle', 'Idle', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -58, 34);
+				addOffset("singRIGHT", -13, -8);
+				addOffset("singLEFT",  32, -2);
+				addOffset("singDOWN", 9, -42);
+
+				playAnim('idle');	
+			case 'squid':
+				frames = Paths.getSparrowAtlasFunk("characters/SquidBoy84");
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('idle', 'idle', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", 43, 25);
+				addOffset("singRIGHT", -37, 0);
+				addOffset("singLEFT",  106, 5);
+				addOffset("singDOWN", -70, -24);
+
+				playAnim('idle');
+			case 'squidboyv1':
+				frames = Paths.getSparrowAtlasFunk("characters/squidv1");
+				animation.addByPrefix('singUP', 'squidup', 24, false);
+				animation.addByPrefix('singDOWN', 'squiddown', 24, false);
+				animation.addByPrefix('singLEFT', 'squidleft', 24, false);
+				animation.addByPrefix('singRIGHT', 'squidright', 24, false);
+				animation.addByPrefix('idle', 'squididle', 24, false);
+				animation.addByPrefix('intro', 'squidintro', 24, false);
+
+				addOffset('idle', 57, -183);
+				addOffset('intro', 42, -190);
+				addOffset("singUP", 67, -142);
+				addOffset("singRIGHT", -3, -185);
+				addOffset("singLEFT",  -23, -185);
+				addOffset("singDOWN", 48, -166);
+
+				playAnim('idle');
 			case 'mom':
 				createAtlas();
 				setAtlasAnim('idle', "Mom IdleF");
