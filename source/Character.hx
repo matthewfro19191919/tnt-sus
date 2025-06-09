@@ -306,7 +306,7 @@ class Character extends FlxNestedSkewSprite
 
 				playAnim('danceRight');		
 			case 'LIMEGREENWEEKINVSIMPOSTOR':
-				frames = Paths.getSparrowAtlasFunk("characters/LIME_GRTEEN");
+				frames = Paths.getSparrowAtlas("characters/LIME_GRTEEN");
 				animation.addByPrefix('singUP', 'Sing Up', 24, false);
 				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
 				animation.addByPrefix('singLEFT', 'SIng Left', 24, false);
@@ -321,7 +321,7 @@ class Character extends FlxNestedSkewSprite
 
 				playAnim('idle');	
 			case 'squid':
-				frames = Paths.getSparrowAtlasFunk("characters/SquidBoy84");
+				frames = Paths.getSparrowAtlas("characters/SquidBoy84");
 				animation.addByPrefix('singUP', 'up', 24, false);
 				animation.addByPrefix('singDOWN', 'down', 24, false);
 				animation.addByPrefix('singLEFT', 'left', 24, false);
@@ -336,7 +336,7 @@ class Character extends FlxNestedSkewSprite
 
 				playAnim('idle');
 			case 'squidboyv1':
-				frames = Paths.getSparrowAtlasFunk("characters/squidv1");
+				frames = Paths.getSparrowAtlas("characters/squidv1");
 				animation.addByPrefix('singUP', 'squidup', 24, false);
 				animation.addByPrefix('singDOWN', 'squiddown', 24, false);
 				animation.addByPrefix('singLEFT', 'squidleft', 24, false);
