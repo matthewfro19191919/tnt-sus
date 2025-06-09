@@ -121,6 +121,7 @@ class PlayState extends MusicBeatState
 	public static final schoolScared = ["roses"];
 	public static final evilSchoolSongs = ["thorns"];
 	public static final pixelSongs = ["senpai", "roses", "thorns"];
+	public static final limeSongs = ["senpai", "roses", "thorns"];
 
 	private var camFocus:String = "";
 	private var camTween:FlxTween;
@@ -1163,7 +1164,18 @@ class PlayState extends MusicBeatState
 					man5.animation.play("tank5");
 					man6.animation.play("tank3");
 				});
+                        case 'o2':
+				var background:FlxSprite = new FlxSprite(-1030, -90).loadGraphic(Paths.image("limegreen/O2Background"));
+				add(background);
 
+				var switchSprite:FlxSprite = new FlxSprite(-885, 420).loadGraphic(Paths.image("limegreen/switch"));
+				add(switchSprite);
+
+				var fans:FlxSprite = new FlxSprite(-596, 178);
+				fans.frames = Paths.getSparrowAtlas("limegreen/fansss");
+				fans.animation.addByPrefix("main", "fansss instance 1", 24, true);
+				fans.animation.play("main");
+                                add(fans);
 			case 'prismaStage':
 				defaultCamZoom = 0.8;
 				curStage = 'prismaStage';
