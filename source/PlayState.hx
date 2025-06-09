@@ -121,7 +121,7 @@ class PlayState extends MusicBeatState
 	public static final schoolScared = ["roses"];
 	public static final evilSchoolSongs = ["thorns"];
 	public static final pixelSongs = ["senpai", "roses", "thorns"];
-	public static final limeSongs = ["senpai", "roses", "thorns"];
+	public static final limeSongs = ["lemon-lime", "chlorophyll", "inflorescence", "stargazer"];
 
 	private var camFocus:String = "";
 	private var camTween:FlxTween;
